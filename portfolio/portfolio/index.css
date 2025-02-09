@@ -1,0 +1,306 @@
+.navbar-brand span {
+  color: #bbc5d0;
+}
+
+/* Hover effect on navbar links */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff; 
+  background-color: #5e9fe6; 
+  border-radius: 4px; 
+}
+
+
+/* Optional: Adjust navbar background on scroll */
+.navbar.scrolled {
+  background-color: #f8f9fa;
+}
+
+
+
+
+
+/* 
+.c11{
+    
+    margin-right: 30px; 
+} */
+/* .c11 a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+  }
+  .c11 a:hover {
+    color: #007bff; 
+  } */
+  /* .logo  {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    font-style: italic;
+  } */
+  .spaced-text {
+    letter-spacing: 30px; /* Adjust the spacing as needed */
+  }
+    body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    margin: 0;
+    height: auto;
+  } 
+ /* .progress-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+  }
+  .progress-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+      #4caf50 var(--progress, 0%),
+      #e0e0e0 0%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .progress-circle::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: #f4f4f4;
+    border-radius: 50%;
+  }
+  .progress-circle span {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  } */
+  .skill-label {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    /* color: red; */
+  }
+ /* education */
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin: 0;
+  width: 80%; 
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 15px; 
+  width: 2px;
+  /* height: 100%; */
+  height: 550px;
+  background-color: #007bff;
+}
+
+ .timeline-item {
+  position: relative;
+  margin: 20px 0;
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 30px; 
+  opacity: 0; 
+  transform: translateY(-30px); 
+  animation: slideDown 0.6s ease-out forwards;
+}
+.timeline-item:hover {
+transform: scale(1.2); 
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+cursor: pointer; 
+} 
+
+/* Slide down animation */
+@keyframes slideDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Adding delays for each timeline item with 2-second intervals */
+/* .timeline-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.timeline-item:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.timeline-item:nth-child(3) {
+  animation-delay: 4s;
+} */
+
+/* Hover effect on the content block */
+.timeline-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+}
+
+.timeline-item .btn-period {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+.btn-period {
+
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for color and scaling */
+}
+.timeline-item .btn-period:hover {
+  background-color: #0056b3;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -19px; 
+  width: 14px;
+  height: 14px;
+  background-color: #000109;
+  border-radius: 50%; 
+  box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.5);
+  animation: pulse 1.5s infinite;
+  transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  border-radius: 0; 
+  width: 20px; 
+  height: 20px; 
+}
+
+@keyframes pulse {
+  0% {
+      transform: rotate(0deg);
+      border-radius: 20px;
+  }
+  20% {
+      transform: rotate(30deg);
+      border-radius: 40px;
+  }
+  40% {
+      transform: rotate(45deg);
+      border-radius: 60px;
+  }
+  60% {
+      transform: rotate(60deg);
+      border-radius: 80px;
+  }
+  80% {
+      transform: rotate(90deg);
+      border-radius: 100px;
+  }
+  100% {
+      transform: rotate(120deg);
+      border-radius: 120px;
+  }
+  120% {
+      transform: rotate(180deg);
+      border-radius: 140px;
+  }
+  140% {
+      transform: rotate(270deg);
+      border-radius: 160px;
+  }
+  160% {
+      transform: rotate(360deg);
+      border-radius: 180px;
+  }
+}
+  
+/* Button styling */
+.btn-period {
+
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.btn-period:hover {
+  background-color: #0056b3; 
+  transform: scale(1.09); 
+}
+
+
+
+.info-section {
+  background-color: #f8f9fa;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+}
+ marquee {
+  width: 80%;
+}
+.skill-button {
+  gap: 40px;
+  height: 100px;
+  width: 120px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.skill-button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(rgb(16, 52, 235),rgb(31, 49, 240),rgb(29, 46, 236));
+  color: white;
+} 
+
+/* projectttttt */
+
